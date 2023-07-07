@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+
+         *{
             margin:0;
             padding:0;
             box-sizing:border-box;}
-            
         .container{
            
             display:flex;
@@ -18,7 +18,7 @@
             height:100vh;
             align-items: center;
             justify-content: center;
-           background-color: rgb(63, 54, 54);
+           background-color: rgb(58, 52, 52);
            color:antiquewhite;
            font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           font-size:15px;
@@ -33,6 +33,8 @@
 
          p{
             margin-bottom:50px;
+            text-align: center;
+            line-height: 25px;
           }
 
 
@@ -42,6 +44,16 @@
             width:120px;
             margin:0 20px;
             border-radius:50%;
+            margin-bottom:10px;
+        }
+
+        .headsbtn,.tailsbtn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: beige;
         }
 
     
@@ -52,13 +64,14 @@
     
 <div class="container">
 
-    <p>Guess The Computer Move. Is it heads or Tails ?</p>
+    <p>Can you guess the computer move.<br>Heads or Tails ?</p>
 
     <div class="small-container">
     <div class="heads"><a href="" onclick="pickComputerMove();
-    playGame('Heads');"><img src="heads.jfif" alt=""></a></div>
+    playGame('Heads');" class="headsbtn"><img src="heads.jfif" alt="">
+    <p>Heads</p></a></div>
     <div class="tails"><a href="" onclick="pickComputerMove();
-    playGame('Tails');"><img src="tails.jfif" alt=""></a></div>
+    playGame('Tails');" class="tailsbtn"><img src="tails.jfif" alt=""><p>Tails</p></a></div>
     </div>
 
 </div>
